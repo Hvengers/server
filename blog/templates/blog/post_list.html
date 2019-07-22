@@ -1,4 +1,4 @@
-{% load staticfiles %}
+{%load static %}
 <html>
     <head>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -22,7 +22,7 @@
             <h2>Taxi Status</h2>
             <p>Taxi content</p>
             <figure class="left">
-                <img src="{% static 'inner.jpg' %}"width ="400" height="300"/ >
+                <img src="{%static "image/inner.jpg"%}"  width ="400" height="300">
                 <figcaption>택시실내사진</figcaption>
             </figure>
           <aside class="right" id="border1">
@@ -51,7 +51,7 @@
             <h2>Payment System Status </h2>
             <p>Payment is completed</p>
             <figure class="left">
-                <img src="payment.jpg"  width ="400" height="300">
+                <img src="{%static "image/payment.jpg"%}"  width ="400" height="300">
                 <figcaption>택시실내사진</figcaption>
             </figure>
           <aside class="right" id="border1">
@@ -81,13 +81,13 @@
            </div>
            <div id="SNS">
                <a href="https://www.hyundai.com/kr/ko/main.html" target="_blank">
-                   <img src="hyundai.jpg" height="32" alt="hyundai">
+                   <img src="{%static "image/hyundai.jpg"%}" height="32" alt="hyundai">
                </a>
                <a href="https://www.police.go.kr/main.html" target="_blank">
-                   <img src="police.jpg" height="32" alt="police">
+                   <img src="{%static "image/police.jpg"%}" height="32" alt="police">
                </a>
                <a href="https://www.sexoffender.go.kr/" target="_blank">
-                   <img src="sexoffender.jpg" height="32" alt="sexoffender">
+                   <img src="{%static "image/sexoffender.jpg"%}" height="32" alt="sexoffender">
                </a>
 
             </div>
