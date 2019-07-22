@@ -1,8 +1,4 @@
 from django.shortcuts import render
-<<<<<<< HEAD
-
-# Create your views here.
-=======
 from django.utils import timezone
 from .models import Post
 from datetime import datetime
@@ -20,4 +16,3 @@ def post_list(request):
 '''
 def a_view(request):
     return render(request, 'blog/post_list.html',{'time':datetime.now()})
->>>>>>> f116712c0aaa338db2c5dd00fb2f98930e6daa24
